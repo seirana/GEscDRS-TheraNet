@@ -32,7 +32,7 @@ Singularity  (as the container engine)
 - [Documentation](#documentation)
 - [Funding](#funding)
 
-## Pipeline Structure
+# Pipeline Structure
 No software installation step is needed — Nextflow automatically downloads all necessary containers and tools.	
 # Key features
 ## Input data
