@@ -51,7 +51,7 @@ The pipeline can download and install the required databases for .....
 ## Prerequisites
 ## Installing dependencies
 ### Step 1: Install Nextflow
-Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be installed. Follow the instructions from [Nextflow installation guidance](https://www.nextflow.io/docs/latest/install.html#install-page).
+Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be installed. Follow the instructions from [Nextflow installation guidance](https://www.nextflow.io/docs/latest/install.html#install-page) to check requirements and step-by-step installation.
 ### Step 2: Install Singularity 
 ## Downloading GEscDRS-TheraNet
 ## Configuration
