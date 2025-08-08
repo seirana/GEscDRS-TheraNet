@@ -51,7 +51,7 @@ The pipeline can download and install the required databases for .....
 ## Prerequisites
 ## Installing dependencies
 ### Step 1: Install Nextflow
-For more information, you can check the webpage of [Nextflow](https://www.nextflow.io/docs/latest/install.html#install-page)
+Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be installed. Follow the instructions from [Nextflow installation guidance](https://www.nextflow.io/docs/latest/install.html#install-page).
 ### Step 2: Install Singularity 
 ## Downloading GEscDRS-TheraNet
 ## Configuration
@@ -66,45 +66,6 @@ GEscDRS-THeraNet requires significant computational resources. Ensure your syste
 CPU: At least ?? cores.
 RAM: At least ?? GB (e.g., Semibin may require up to ?? GB, and GTDB-TK up to ?? GB).
 For large datasets, it is recommended to run the pipeline on a high-performance computing (HPC) system.
-#Installing dependencies
-Step 1: Install Nextflow
-Nextflow requires Java. We recommend using SDKMAN for easy Java installation:
-
-# Install SDKMAN
-curl -s https://get.sdkman.io | bash
-# Install Java Temurin with SDKMAN (other Java versions might cause bugs)
-sdk install java 17.0.10-tem
-# Confirm that Java is available in version 17.0.10-tem
-java -version
-#In case another Java version is shown: Create and activate a SDK environment in the directory you want to execute the Nextflow pipeline
-sdk env init
-sdk env
-To install and test Nextflow:
-
-Install Nextflow in your current directory:
-curl -s https://get.nextflow.io | bash
-Make Nextflow executable:
-chmod +x nextflow
-Try a simple Nextflow demo
-nextflow run hello
-Step 2: Install Singularity (Apptainer)
-You can install Singularity via:
-
-The Singularity Quickstart Guide or
-Conda (no sudo rights required):
-Create a new conda environment for Singularity
-conda create --name sing_env -c conda-forge -c bioconda singularity=3.8 
-Activate environment
-conda activate sing_env
-Check whether Singularity has been successfully installed
-singularity --version
-Also, make sure you can run an example container
-singularity run library://sylabsed/examples/lolcow
-Downloading TOFU-MAaPO
-Use the following command to download or update the pipeline:
-
-nextflow pull ikmb/tofu-maapo
-You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/tofu-maapo.
 
 # Documentation
 All further documentation about the pipeline can be found in the docs/ directory or under the links below:
