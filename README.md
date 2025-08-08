@@ -51,6 +51,7 @@ The pipeline can download and install the required databases for .....
 ## Prerequisites
 ## Installing dependencies
 ### Step 1: Install Nextflow
+For more information, you can check the webpage of Nextflow(#https://www.nextflow.io/docs/latest/install.html#install-page)
 ### Step 2: Install Singularity 
 ## Downloading GEscDRS-TheraNet
 ## Configuration
