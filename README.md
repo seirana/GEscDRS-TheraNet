@@ -9,7 +9,6 @@ TheraNet identifies the list of possible effective approved drugs based on drug 
 The pipeline is compatible with any Linux system and requires only two dependencies:
 
 Nextflow (workflow manager)
- 
 Singularity  (as the container engine)
 
 # Table of contents
