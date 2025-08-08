@@ -10,7 +10,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 Nextflow (workflow manager)
 Singularity  (as the container engine)
 
-#Table of contents
+# Table of contents
 	- [Pipeline structure](#pipeline-structure)
 	- [Key features](#key-features)
 		- [Input data type](#input-data-type)
