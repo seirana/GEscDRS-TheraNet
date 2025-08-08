@@ -35,7 +35,7 @@ Singularity  (as the container engine)
 # Pipeline Structure
 After installing Netwflow, you no longer need to install additional software.
 Nextflow automatically downloads all necessary containers and tools.
-![Image Alt Text](seirana/GEscDRS-TheraNet/Pipeline Structure.png)
+![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.drawio.png)
 
 # Key features
 ## Input data
