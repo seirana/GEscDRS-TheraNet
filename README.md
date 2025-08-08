@@ -7,8 +7,8 @@ GE-scDRS Identifying cells exhibiting excess expression across disease-associate
 TheraNet identifies the list of possible effective approved drugs based on drug and disease target gene interactions.   
 
 The pipeline is compatible with any Linux system and requires only two dependencies:  
- -Nextflow (workflow manager)  
- -Singularity  (as the container engine)
+ - Nextflow (workflow manager)  
+ - Singularity  (as the container engine)
 
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
