@@ -3,8 +3,8 @@
 GEscDRS-TheraNet is a Nexflow pipeline designed to link scRNA-seq with polygenic disease risk at the single-cell resolution, independent of annotated cell types, and suggest drugs for the disease.  
 
 It provides comprehensive functionalities for:  
-GE-scDRS Identifying cells exhibiting excess expression across disease-associated genes implicated by Whole Exome Sequencing (WES) or genome-wide association studies (GWASs).  
-TheraNet identifies the list of possible effective approved drugs based on drug and disease target gene interactions.   
+ - GE-scDRS Identifying cells exhibiting excess expression across disease-associated genes implicated by Whole Exome Sequencing (WES) or genome-wide association studies (GWASs).  
+ - TheraNet identifies the list of possible effective approved drugs based on drug and disease target gene interactions.   
 
 The pipeline is compatible with any Linux system and requires only two dependencies:  
  - Nextflow (workflow manager)  
