@@ -39,24 +39,7 @@ After installing Netwflow and Singularity, you no longer need to install additio
 Nextflow automatically downloads all necessary containers and tools.
 
 ![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.png)
-#...................................................................................................................................................
-##Input data
-TOFU-MAaPO accepts the following types of input:
 
-Single- or paired-end metagenomic shotgun sequencing FASTQ files
-A CSV file listing samples and their associated FASTQ files
-Direct download of sequencing data from SRA using project, sample, or run IDs
-##Database management
-The pipeline can download and install the required databases for GTDBtk, MetaPhlAn, and HUMAnN. Please take a look at the usage documentation for more details.
-
-The following tools need manual creation or the download of required databases:
-
-Bowtie2 (for host genome removal)
-Kraken2 (with Braken)
-Sylph
-Salmon
-
-#...................................................................................................................................................
 # Quick Start
 ## Prerequisites and Configuration
 GEscDRS-TheraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
