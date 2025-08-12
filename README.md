@@ -36,7 +36,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 After installing Netwflow and Singularity, you no longer need to install additional software.
 Nextflow automatically downloads all necessary containers and tools.
 
-![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.drawio.png)
+![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.png)
 
 # Key features
 ## Input data
