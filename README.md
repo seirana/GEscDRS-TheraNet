@@ -68,8 +68,22 @@ singularity run library://sylabsed/examples/lolcow
 ```
 
 ## Downloading GEscDRS-TheraNet
+Use the following command to download or update the pipeline:
+```bash
+nextflow pull ikmb/GEscDRS-TheraNet
+```
+You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-theranet.
+
 ## Configuration
+After downloading GEscDRS-TheraNet, a basic quickstart profile is created in the Nextflow pipeline code folder, which allows you to run quality control analysis with local FASTQ files. See the following quickstart example below. All further analyses of the quickstart example require the creation of a separate custom configuration file.
+
 ### Quickstart profile
+GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing:
+* Cores: Limited to 4 per process.
+* RAM: Limited to 32 GB.
+* Directory: Designed to run in the user's home directory.  
+  | Note: The quickstart profile is not recommended for real metagenome data analysis usage.
+
 ### Custom configuration
 ## Example workflows:
 ### Running GEscDRS	
