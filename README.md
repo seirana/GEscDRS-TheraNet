@@ -11,7 +11,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
  - Singularity  (as the container engine)
 
 In [Quick Start](#quick-start), you can follow the instructions to install the requirements and run simple samples.
-To know the details of the functions and needed data types and formats, check the [Documentations](#documentations).
+To know the details of the functions, check the [Documentations](#documentations). Also, there, you can find detailed instructions about the data type and formats that are needed as input for GEscDRS and TheraNet functions.
 
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
@@ -133,11 +133,11 @@ For detailed usage options, please take a look at the usage documentation.	????
 
 # Documentations 
 ????
-All further documentation about the pipeline can be found in the docs/ directory or under the links below:
+All further documentation about the pipeline can be found in the [docs/](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs)directory or under the links below:
 Installation and configuration
 Add host genomes to GEscDRS-TheraNet
-Available options
-Outputs structure
+GEscDRS
+TheraNet
 
 # Funding
 The project was funded by the German Research Foundation (DFG) Research Unit ????.
