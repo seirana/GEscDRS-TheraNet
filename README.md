@@ -63,7 +63,7 @@ CPU: At least 16 cores.
 RAM: At least 32 GB (e.g., GEscDRS may require up to 360 GB).
 
 ### Pre-configuration
-GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing with the least requirements.
+GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing with the least requirements, as mentioned above.
 
 Note: The quickstart profile is not recommended for real metagenome data analysis usage.
 For large datasets, it is recommended to run the pipeline on a high-performance computing (HPC) system.
