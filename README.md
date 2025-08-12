@@ -82,9 +82,10 @@ GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing:
 * Cores: Limited to 4 per process.
 * RAM: Limited to 32 GB.
 * Directory: Designed to run in the user's home directory.  
-  | Note: The quickstart profile is not recommended for real metagenome data analysis usage.
+> Note: The quickstart profile is not recommended for real metagenome data analysis usage.
 
 ### Custom configuration
+
 ## Example workflows:
 ### Running GEscDRS	
 ### Running TheraNet
