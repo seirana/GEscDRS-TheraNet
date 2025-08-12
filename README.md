@@ -10,13 +10,15 @@ The pipeline is compatible with any Linux system and requires only two dependenc
  - Nextflow (workflow manager)  
  - Singularity  (as the container engine)
 
+In [Quick Start](quick-start), you can follow the instructions to install the requirements and run simple samples.
+To know the details of the functions and needed data types and formats, check the [Documents](documents).
+
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
 - [Key features](#key-features)
 	- [Input data type](#input-data-type)
 	- [Database management](#database-management)
-
-- [Quick start](#quick-start)
+- [Quick Start](#quick-start)
 	- [Prerequisites and Configuration](#prerequisites-and-configuration)
     	- [Pre-configuration](#pre-configuration)
     	- [Custom configuration](#custom-configuration)
@@ -25,11 +27,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 		- [Step 2: Install Singularity ](#step-2-Install-singularity )	
 	- [Example workflows](#example-workflows)
 		- [Running GEscDRS](#running-gescdrs)
-    		- [Input data type](#input-data-type)
-        	- [Output data type](#output-data-type)
 		- [Running TheraNet](#running-theranet)
-    		- [Input data type](#input-data-type)
-        	- [Output data type](#output-data-type)
 - [Documentation](#documentation)
 - [Funding](#funding)
 
@@ -45,11 +43,11 @@ TOFU-MAaPO accepts the following types of input:
 
 Single- or paired-end metagenomic shotgun sequencing FASTQ files
 A CSV file listing samples and their associated FASTQ files
-Direct download of sequencing data from SRA using project, sample or run IDs
+Direct download of sequencing data from SRA using project, sample, or run IDs
 ##Database management
-The pipeline can download and install the required databases for GTDBtk, MetaPhlAn and HUMAnN. Refer to the usage documentation for more details.
+The pipeline can download and install the required databases for GTDBtk, MetaPhlAn, and HUMAnN. Refer to the usage documentation for more details.
 
-Following tools need manual creation or download of required databases:
+The following tools need manual creation or the download of required databases:
 
 Bowtie2 (for host genome removal)
 Kraken2 (with Braken)
@@ -57,7 +55,7 @@ Sylph
 Salmon
 
 #...................................................................................................................................................
-# Quick start
+# Quick Start
 ## Prerequisites and Configuration
 GEscDRS-TheraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
 
@@ -133,7 +131,8 @@ nextflow run ikmb/tofu-maapo \
 ```
 For detailed usage options, please take a look at the usage documentation.	????
 
-# Documentation
+# Documentation 
+????
 All further documentation about the pipeline can be found in the docs/ directory or under the links below:
 Installation and configuration
 Add host genomes to GEscDRS-TheraNet
