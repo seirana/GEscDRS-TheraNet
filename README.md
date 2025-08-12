@@ -37,7 +37,7 @@ After installing Netwflow and Singularity, you no longer need to install additio
 Nextflow automatically downloads all necessary containers and tools.
 
 ![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.png)
-
+#...................................................................................................................................................
 # Key features
 ## Input data
 GEscDRS-TheraNet needs the following input data:	
@@ -47,8 +47,27 @@ A CSV file listing
 The pipeline can download and install the required databases for .....
 ## GEscDRS
 ## TheraNet
+#...................................................................................................................................................
 # Quick start
-## Prerequisites
+## Prerequisites and Configuration
+GEscDRS-TheraNetO requires significant computational resources. Ensure your system meets the following minimum requirements:
+
+CPU: At least 16 cores.
+RAM: At least 32 GB (e.g., GEscDRS may require up to 360 GB).
+
+GEscDRS-TheraNetO includes a pre-configured quickstart profile for local testing with the least requirements.
+
+Note: The quickstart profile is not recommended for real metagenome data analysis usage.
+For large datasets, it is recommended to run the pipeline on a high-performance computing (HPC) system.
+
+## Custom configuration
+To fully utilize GEscDRS-TheraNetO on an HPC or other systems, you must create a custom configuration file specifying:
+
+Available CPU cores and memory.
+Scheduler settings (e.g., local or SLURM).
+Paths for reference databases.
+Please take a look at the installation and configuration documentation for details. ???????
+
 ## Installing dependencies
 ### Step 1: Install Nextflow
 Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be installed. Follow the instructions from [Nextflow installation guidance](https://www.nextflow.io/docs/latest/install.html#install-page) to check requirements and step-by-step installation.
@@ -66,7 +85,6 @@ singularity --version
 # Also, make sure you can run an example container
 singularity run library://sylabsed/examples/lolcow
 ```
-
 ## Downloading GEscDRS-TheraNet
 Use the following command to download or update the pipeline:
 ```bash
@@ -74,28 +92,13 @@ nextflow pull ikmb/GEscDRS-TheraNet
 ```
 You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-theranet.
 
-## Configuration
-After downloading GEscDRS-TheraNet, a basic quickstart profile is created in the Nextflow pipeline code folder, which allows you to run quality control analysis with local FASTQ files. See the following quickstart example below. All further analyses of the quickstart example require the creation of a separate custom configuration file.
-
-### Quickstart profile
-GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing:
-* Cores: Limited to 4 per process.
-* RAM: Limited to 32 GB.
-* Directory: Designed to run in the user's home directory.  
-> Note: The quickstart profile is not recommended for real metagenome data analysis usage.
-
-### Custom configuration
-
-## Example workflows:
+## Example workflows
+* Running GEscDRS	
+* Running TheraNet
+  
 ### Running GEscDRS	
 ### Running TheraNet
-# Prerequisites
-GEscDRS-THeraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
-
-CPU: At least ?? cores.
-RAM: At least ?? GB (e.g., Semibin may require up to ?? GB, and GTDB-TK up to ?? GB).
-For large datasets, it is recommended to run the pipeline on a high-performance computing (HPC) system.
-
+#.............................................................................................................................................................................................
 # Documentation
 All further documentation about the pipeline can be found in the docs/ directory or under the links below:
 Installation and configuration
