@@ -59,7 +59,7 @@ Salmon
 ## Prerequisites and Configuration
 GEscDRS-TheraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
 
-CPU: At least 16 cores.^
+CPU: At least 16 cores.    
 RAM: At least 32 GB (e.g., GEscDRS may require up to 360 GB).
 
 ### Pre-configuration
