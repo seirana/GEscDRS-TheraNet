@@ -18,14 +18,12 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 	- [GEscDRS](#gescdrs)
 	- [TheraNet](#theranet)
 - [Quick start](#quick-start)
-	- [Prerequisites](#prerequisites)
+	- [Prerequisites and Configuration](#prerequisites-and-configuration)
+    	- [Pre-configuration](#pre-configuration)
+    	- [Custom configuration](#custom-configuration)
 	- [Installing dependencies](#installing-dependencies)
 		- [Step 1: Install Nextflow](#step-1-Install-nextflow)
-		- [Step 2: Install Singularity ](#step-2-Install-singularity )
-	- [Downloading GEscDRS-TheraNet](#downloading-gescdrs-theranet)
-	- [Configuration](#configuration)
-		- [Quickstart profile](#quickstart-profile)
-		- [Custom configuration](#custom-configuration)
+		- [Step 2: Install Singularity ](#step-2-Install-singularity )	
 	- [Example workflows](#example-workflows)
 		- [Running GEscDRS](#running-gescdrs)	
 		- [Running TheraNet](#running-theranet)
@@ -50,18 +48,19 @@ The pipeline can download and install the required databases for .....
 #...................................................................................................................................................
 # Quick start
 ## Prerequisites and Configuration
-GEscDRS-TheraNetO requires significant computational resources. Ensure your system meets the following minimum requirements:
+GEscDRS-TheraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
 
 CPU: At least 16 cores.
 RAM: At least 32 GB (e.g., GEscDRS may require up to 360 GB).
 
-GEscDRS-TheraNetO includes a pre-configured quickstart profile for local testing with the least requirements.
+### Pre-configuration
+GEscDRS-TheraNet includes a pre-configured quickstart profile for local testing with the least requirements.
 
 Note: The quickstart profile is not recommended for real metagenome data analysis usage.
 For large datasets, it is recommended to run the pipeline on a high-performance computing (HPC) system.
 
-## Custom configuration
-To fully utilize GEscDRS-TheraNetO on an HPC or other systems, you must create a custom configuration file specifying:
+### Custom configuration
+To fully utilize GEscDRS-TheraNet on an HPC or other systems, you must create a custom configuration file specifying:
 
 Available CPU cores and memory.
 Scheduler settings (e.g., local or SLURM).
@@ -97,8 +96,32 @@ You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-
 * Running TheraNet
   
 ### Running GEscDRS	
+In your first run, to download required databases, add the --updatemetaphlan flag; in subsequent runs, skip the update flag (remove line 6 from the following code).
+```bash
+nextflow run ikmb/tofu-maapo \
+    -profile custom \
+    -c tofu.config \
+    --reads '*_R{1,2}.fastq.gz' \
+    --metaphlan \
+    --updatemetaphlan \
+    --metaphlan_db '/path/to/store/metaphlan/db' \
+    --outdir results
+```
+	
 ### Running TheraNet
-#.............................................................................................................................................................................................
+In your first run, to download required databases, add the --updatemetaphlan flag; in subsequent runs, skip the update flag(remove line 6 from the following code).
+```bash
+nextflow run ikmb/tofu-maapo \
+    -profile custom \
+    -c tofu.config \
+    --reads '*_R{1,2}.fastq.gz' \
+    --metaphlan \
+    --updatemetaphlan \
+    --metaphlan_db '/path/to/store/metaphlan/db' \
+    --outdir results
+```
+For detailed usage options, please take a look at the usage documentation.	????
+
 # Documentation
 All further documentation about the pipeline can be found in the docs/ directory or under the links below:
 Installation and configuration
@@ -107,4 +130,4 @@ Available options
 Outputs structure
 
 # Funding
-The project was funded by the German Research Foundation (DFG) Research Unit .....
+The project was funded by the German Research Foundation (DFG) Research Unit ????.
