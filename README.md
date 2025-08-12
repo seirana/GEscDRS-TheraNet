@@ -10,8 +10,8 @@ The pipeline is compatible with any Linux system and requires only two dependenc
  - Nextflow (workflow manager)  
  - Singularity  (as the container engine)
 
-In [Quick Start](quick-start), you can follow the instructions to install the requirements and run simple samples.
-To know the details of the functions and needed data types and formats, check the [Documents](documents).
+In [Quick Start](#quick-start), you can follow the instructions to install the requirements and run simple samples.
+To know the details of the functions and needed data types and formats, check the [Documents](#documents).
 
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
@@ -82,7 +82,7 @@ Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be ins
 
 ### Step 2: Install Singularity 
 You can install Singularity via the [Singularity Quickstart Guide](https://docs.sylabs.io/guides/3.9/user-guide/quick_start.html) or
-Conda (no sudo rights required):
+[Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (no sudo rights required):
 ```bash
 # Create a new conda environment for Singularity
 conda create --name sing_env -c conda-forge -c bioconda singularity=3.8 
