@@ -132,8 +132,8 @@ nextflow run ikmb/tofu-maapo \
 
 # Documentations 
 All further documentation about the pipeline can be found in the [docs/ directory](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs) under the links below:
-[GEscDRS](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/gescDRS)
-[TheraNet](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/theranet)
+* [GEscDRS](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/gescDRS)
+* [TheraNet](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/theranet)
 
 # Funding
 The project was funded by the German Research Foundation (DFG) Research Unit ????.
