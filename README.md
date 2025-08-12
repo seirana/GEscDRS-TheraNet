@@ -27,13 +27,14 @@ To know the details of the functions, check the [Documentations](#documentations
     	- [step 3: Install dependent software for GEscDRS](#step-3-install-dependent-software-for-gescdrs)
      - [Downloads](#downloads)
        - [Downloading GEscDRS-TheraNet](#downloading-gescdrs-theranet)
-       - [Downloading input data](#downloading-input-data)
+       - [Downloading input data_for GEscDRS](#downloading-input-data-for-gescdrs)
+       - [Downloading input data_for TheraNet](#downloading-input-data-for-theranet)
      - [Example workflows](#example-workflows)
 		- [Running GEscDRS](#running-gescdrs)
 		- [Running TheraNet](#running-theranet)
 - [Documentation](#documentation)
 - [Funding](#funding)
-
+  
 # Pipeline Structure
 After installing Netwflow and Singularity, you no longer need to install additional software.
 Nextflow automatically downloads all necessary containers and tools.
@@ -90,7 +91,8 @@ nextflow pull ikmb/GEscDRS-TheraNet
 ```
 You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-theranet.
 
-### Downloading input data
+### Downloading input data for GEsxDRS
+### Downloading input data for TheraNet
 
 
 ## Example workflows
