@@ -16,16 +16,19 @@ To know the details of the functions, check the [Documentations](#documentations
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
 - [Key features](#key-features)
-	- [Input data type](#input-data-type)
-	- [Database management](#database-management)
+
 - [Quick Start](#quick-start)
 	- [Prerequisites and Configuration](#prerequisites-and-configuration)
     	- [Pre-configuration](#pre-configuration)
     	- [Custom configuration](#custom-configuration)
 	- [Installing dependencies](#installing-dependencies)
 		- [Step 1: Install Nextflow](#step-1-Install-nextflow)
-		- [Step 2: Install Singularity ](#step-2-Install-singularity )	
-	- [Example workflows](#example-workflows)
+		- [Step 2: Install Singularity ](#step-2-Install-singularity)
+    	- [step 3: Install dependent software for GEscDRS](#step-3-install-dependent-software-for-gescdrs)
+     - [Downloads](#downloads)
+       - [Downloading GEscDRS-TheraNet](#downloading-gescdrs-theranet)
+       - [Downloading input data](#downloading-input-data)
+     - [Example workflows](#example-workflows)
 		- [Running GEscDRS](#running-gescdrs)
 		- [Running TheraNet](#running-theranet)
 - [Documentation](#documentation)
@@ -37,7 +40,6 @@ Nextflow automatically downloads all necessary containers and tools.
 
 ![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.png)
 #...................................................................................................................................................
-#Key features
 ##Input data
 TOFU-MAaPO accepts the following types of input:
 
@@ -93,19 +95,27 @@ singularity --version
 # Also, make sure you can run an example container
 singularity run library://sylabsed/examples/lolcow
 ```
-## Downloading GEscDRS-TheraNet
+
+### step 3: Install dependent software for GEscDRS
+* TheraNet does not need any extra software to run
+
+## Downloads
+### Downloading GEscDRS-TheraNet
 Use the following command to download or update the pipeline:
 ```bash
 nextflow pull ikmb/GEscDRS-TheraNet
 ```
 You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-theranet.
 
+### Downloading input data
+
+
 ## Example workflows
 * Running GEscDRS	
 * Running TheraNet
   
 ### Running GEscDRS	
-In your first run, to download required databases, add the --updatemetaphlan flag; in subsequent runs, skip the update flag (remove line 6 from the following code; --updatemetaphlan \).
+In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can just skip the update flag (remove line 6 from the following code; --updatemetaphlan \).
 ```bash
 nextflow run ikmb/tofu-maapo \
     -profile custom \
@@ -118,7 +128,7 @@ nextflow run ikmb/tofu-maapo \
 ```
 	
 ### Running TheraNet
-In your first run, to download required databases, add the --updatemetaphlan flag; in subsequent runs, skip the update flag(remove line 6 from the following code; --updatemetaphlan \).
+In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can just skip the update flag(remove line 6 from the following code; --updatemetaphlan \).
 ```bash
 nextflow run ikmb/tofu-maapo \
     -profile custom \
