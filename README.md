@@ -12,7 +12,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 
 In [Quick Start](#quick-start), you can follow the instructions to install the requirements and run simple samples.
 To know the details of the functions, check the [Documentations](#documentations). Also, there, you can find detailed instructions about the data type and formats that are needed as input for GEscDRS and TheraNet functions.
-
+ 
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
 - [Key features](#key-features)
@@ -59,7 +59,7 @@ Salmon
 ## Prerequisites and Configuration
 GEscDRS-TheraNet requires significant computational resources. Ensure your system meets the following minimum requirements:
 
-CPU: At least 16 cores.
+CPU: At least 16 cores.^
 RAM: At least 32 GB (e.g., GEscDRS may require up to 360 GB).
 
 ### Pre-configuration
@@ -129,15 +129,11 @@ nextflow run ikmb/tofu-maapo \
     --metaphlan_db '/path/to/store/metaphlan/db' \
     --outdir results
 ```
-For detailed usage options, please take a look at the usage documentation.	????
 
 # Documentations 
-????
-All further documentation about the pipeline can be found in the [docs/](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs)directory or under the links below:
-Installation and configuration
-Add host genomes to GEscDRS-TheraNet
-GEscDRS
-TheraNet
+All further documentation about the pipeline can be found in the [docs/ directory](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs) under the links below:
+[GEscDRS](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/gescDRS)
+[TheraNet](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/theranet)
 
 # Funding
 The project was funded by the German Research Foundation (DFG) Research Unit ????.
