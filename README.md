@@ -100,7 +100,7 @@ You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-
 * Running TheraNet
   
 ### Running GEscDRS	
-In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can just skip the update flag (remove line 6 from the following code; --updatemetaphlan \).
+In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can skip the update flag (remove line 6 from the following code; --updatemetaphlan \).
 ```bash
 nextflow run ikmb/tofu-maapo \
     -profile custom \
@@ -113,7 +113,7 @@ nextflow run ikmb/tofu-maapo \
 ```
 	
 ### Running TheraNet
-In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can just skip the update flag(remove line 6 from the following code; --updatemetaphlan \).
+In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can skip the update flag(remove line 6 from the following code; --updatemetaphlan \).
 ```bash
 nextflow run ikmb/tofu-maapo \
     -profile custom \
@@ -126,7 +126,7 @@ nextflow run ikmb/tofu-maapo \
 ```
 
 # Documentations 
-All further documentation about the pipeline can be found in the [docs/ directory](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs) under the links below:
+All further documentation about the pipeline can be found in the [docs/](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs) directory under the links below:
 * [GEscDRS](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/gescDRS)
 * [TheraNet](https://github.com/seirana/GEscDRS-TheraNet/blob/main/docs/theranet)
 
