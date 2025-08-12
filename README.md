@@ -11,7 +11,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
  - Singularity  (as the container engine)
 
 In [Quick Start](#quick-start), you can follow the instructions to install the requirements and run simple samples.
-To know the details of the functions and needed data types and formats, check the [Documents](#documents).
+To know the details of the functions and needed data types and formats, check the [Documentations](#documentations).
 
 # Table of contents
 - [Pipeline structure](#pipeline-structure)
@@ -45,7 +45,7 @@ Single- or paired-end metagenomic shotgun sequencing FASTQ files
 A CSV file listing samples and their associated FASTQ files
 Direct download of sequencing data from SRA using project, sample, or run IDs
 ##Database management
-The pipeline can download and install the required databases for GTDBtk, MetaPhlAn, and HUMAnN. Refer to the usage documentation for more details.
+The pipeline can download and install the required databases for GTDBtk, MetaPhlAn, and HUMAnN. Please take a look at the usage documentation for more details.
 
 The following tools need manual creation or the download of required databases:
 
@@ -131,7 +131,7 @@ nextflow run ikmb/tofu-maapo \
 ```
 For detailed usage options, please take a look at the usage documentation.	????
 
-# Documentation 
+# Documentations 
 ????
 All further documentation about the pipeline can be found in the docs/ directory or under the links below:
 Installation and configuration
