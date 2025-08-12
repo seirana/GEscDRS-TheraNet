@@ -15,8 +15,7 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 - [Key features](#key-features)
 	- [Input data type](#input-data-type)
 	- [Database management](#database-management)
-	- [GEscDRS](#gescdrs)
-	- [TheraNet](#theranet)
+
 - [Quick start](#quick-start)
 	- [Prerequisites and Configuration](#prerequisites-and-configuration)
     	- [Pre-configuration](#pre-configuration)
@@ -25,8 +24,12 @@ The pipeline is compatible with any Linux system and requires only two dependenc
 		- [Step 1: Install Nextflow](#step-1-Install-nextflow)
 		- [Step 2: Install Singularity ](#step-2-Install-singularity )	
 	- [Example workflows](#example-workflows)
-		- [Running GEscDRS](#running-gescdrs)	
+		- [Running GEscDRS](#running-gescdrs)
+    		- [Input data type](#input-data-type)
+        	- [Output data type](#output-data-type)
 		- [Running TheraNet](#running-theranet)
+    		- [Input data type](#input-data-type)
+        	- [Output data type](#output-data-type)
 - [Documentation](#documentation)
 - [Funding](#funding)
 
@@ -36,15 +39,23 @@ Nextflow automatically downloads all necessary containers and tools.
 
 ![Image Alt Text](https://github.com/seirana/GEscDRS-TheraNet/blob/main/Images/Pipeline%20Structure.png)
 #...................................................................................................................................................
-# Key features
-## Input data
-GEscDRS-TheraNet needs the following input data:	
-A CSV file listing 
-A CSV file listing
-## Database management
-The pipeline can download and install the required databases for .....
-## GEscDRS
-## TheraNet
+#Key features
+##Input data
+TOFU-MAaPO accepts the following types of input:
+
+Single- or paired-end metagenomic shotgun sequencing FASTQ files
+A CSV file listing samples and their associated FASTQ files
+Direct download of sequencing data from SRA using project, sample or run IDs
+##Database management
+The pipeline can download and install the required databases for GTDBtk, MetaPhlAn and HUMAnN. Refer to the usage documentation for more details.
+
+Following tools need manual creation or download of required databases:
+
+Bowtie2 (for host genome removal)
+Kraken2 (with Braken)
+Sylph
+Salmon
+
 #...................................................................................................................................................
 # Quick start
 ## Prerequisites and Configuration
