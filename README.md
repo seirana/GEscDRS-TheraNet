@@ -52,7 +52,21 @@ The pipeline can download and install the required databases for .....
 ## Installing dependencies
 ### Step 1: Install Nextflow
 Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be installed. Follow the instructions from [Nextflow installation guidance](https://www.nextflow.io/docs/latest/install.html#install-page) to check requirements and step-by-step installation.
+
 ### Step 2: Install Singularity 
+You can install Singularity via the [Singularity Quickstart Guide](https://docs.sylabs.io/guides/3.9/user-guide/quick_start.html) or
+Conda (no sudo rights required):
+```bash
+# Create a new conda environment for Singularity
+conda create --name sing_env -c conda-forge -c bioconda singularity=3.8 
+# Activate environment
+conda activate sing_env
+# Check whether Singularity has been successfully installed
+singularity --version
+# Also, make sure you can run an example container
+singularity run library://sylabsed/examples/lolcow
+```
+
 ## Downloading GEscDRS-TheraNet
 ## Configuration
 ### Quickstart profile
