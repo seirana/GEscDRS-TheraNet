@@ -68,7 +68,7 @@ Nextflow requires Bash 3.2 (or later) and Java 17 (or later, up to 24) to be ins
 
 ### Step 2: Install Singularity 
 You can install Singularity via the [Singularity Quickstart Guide](https://docs.sylabs.io/guides/3.9/user-guide/quick_start.html) or
-[Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (no sudo rights required):
+[Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html):
 ```bash
 # Create a new conda environment for Singularity
 conda create --name sing_env -c conda-forge -c bioconda singularity=3.8 
