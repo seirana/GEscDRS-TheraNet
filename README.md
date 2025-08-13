@@ -108,7 +108,7 @@ You will find the pipeline code stored in ${HOME}/.nextflow/assets/ikmb/gescdrs-
 ### Running GEscDRS	
 In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can skip the update flag (remove line 6 from the following code; --updatemetaphlan \).
 ```bash
-nextflow run ikmb/tofu-maapo \
+nextflow run ikmb/GEscDRS-TheraNet \
     -profile custom \
     -c tofu.config \
     --reads '*_R{1,2}.fastq.gz' \
@@ -121,7 +121,7 @@ nextflow run ikmb/tofu-maapo \
 ### Running TheraNet
 In your first run, to download required databases, you can add the --updatemetaphlan flag; in subsequent runs, you can skip the update flag(remove line 6 from the following code; --updatemetaphlan \).
 ```bash
-nextflow run ikmb/tofu-maapo \
+nextflow run ikmb/GEscDRS-TheraNet \
     -profile custom \
     -c tofu.config \
     --reads '*_R{1,2}.fastq.gz' \
