@@ -81,7 +81,9 @@ singularity run library://sylabsed/examples/lolcow
 ```
 
 ### step 3: Install dependent software for GEscDRS
-* TheraNet does not need any extra software to run
+* TheraNet needs some extra software to run:
+  *scDRS
+  Nextflow will install it. If there is a problem, check [their page](https://pypi.org/project/scdrs/).
 
 ## Downloads
 ### Downloading GEscDRS-TheraNet
