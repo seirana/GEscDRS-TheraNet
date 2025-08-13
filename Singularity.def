@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: python:3.10-slim
+
+%post
+    # Install any additional dependencies the Python code needs
+    pip install numpy pandas matplotlib scdrs ipython statsmodels sympy fire requests scanpy
+
+%environment
+    export LC_ALL=C.UTF-8
+    export LANG=C.UTF-8
+
+%runscript
+    exec python "$@"
