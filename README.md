@@ -81,13 +81,13 @@ singularity run library://sylabsed/examples/lolcow
 ```
 
 ### step 3: Install dependent software for GEscDRS
-* TheraNet needs some extra software to run:
-  *scDRS
-  Nextflow will install it. If there is a problem, check [their page](https://pypi.org/project/scdrs/).
-  * bcftools
-  You can install it from [here](https://samtools.github.io/bcftools/howtos/install.html).
-  * MAGMA
-  Select and install the proper version based on your operating system from [here](https://cncr.nl/research/magma/).
+GEcsDRS needs some extra software to run:
+* scDRS
+Nextflow will install it. If there is a problem, check [their page](https://pypi.org/project/scdrs/).
+* bcftools
+You can install it from [here](https://samtools.github.io/bcftools/howtos/install.html).
+* MAGMA
+Select and install the proper version based on your operating system from [here](https://cncr.nl/research/magma/).
 
 ## Downloads
 ### Downloading GEscDRS-TheraNet
