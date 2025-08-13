@@ -1,0 +1,26 @@
+name: theranet
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ipython
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - statsmodels
+  - sympy
+  - requests
+  - scanpy
+  - umap-learn
+  - h5py
+  - anndata
+  - fire
+  - tqdm
+  - lxml
+  - pytables
+  - python-igraph
+  - pip:
+      - # add any pip-only packages here if needed
